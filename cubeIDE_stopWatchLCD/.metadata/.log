@@ -1,0 +1,52 @@
+!SESSION 2024-01-13 10:34:09.047 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -data /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-01-13 10:34:15.964
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-01-13 10:34:15.965
+!MESSAGE Log4j2 initialized with config file /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-01-13 10:34:18.641
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.ui.ide 4 0 2024-01-13 10:35:04.808
+!MESSAGE Could not import project located at /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:564)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:211)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:95)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:603)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:551)
+	... 2 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-13 10:36:40.046
+!MESSAGE Indexed 'stop_watch_project' (25 sources, 82 headers) in 5.32 sec: 5,271 declarations; 27,435 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0061%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-13 10:40:00.465
+!MESSAGE Indexed 'USB_serial_LCD' (49 sources, 168 headers) in 7.12 sec: 16,680 declarations; 85,790 references; 3 unresolved inclusions; 286 syntax errors; 1,040 unresolved names (1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-13 10:40:49.661
+!MESSAGE Indexed 'USB2_CPP' (51 sources, 205 headers) in 7.35 sec: 19,935 declarations; 95,772 references; 3 unresolved inclusions; 286 syntax errors; 1,040 unresolved names (0.89%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-13 10:40:58.492
+!MESSAGE Indexed 'oled_i2c' (41 sources, 281 headers) in 8.82 sec: 29,106 declarations; 88,454 references; 2 unresolved inclusions; 282 syntax errors; 1,040 unresolved names (0.88%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-13 10:41:06.725
+!MESSAGE Indexed 'timer' (44 sources, 289 headers) in 8.22 sec: 31,501 declarations; 106,326 references; 3 unresolved inclusions; 286 syntax errors; 1,044 unresolved names (0.75%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-13 10:41:10.234
+!MESSAGE Indexed 'timer2' (37 sources, 154 headers) in 3.49 sec: 14,897 declarations; 75,813 references; 7 unresolved inclusions; 300 syntax errors; 1,139 unresolved names (1.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-13 10:41:12.927
+!MESSAGE Indexed 'oled_432' (23 sources, 139 headers) in 2.69 sec: 11,821 declarations; 43,901 references; 3 unresolved inclusions; 48 syntax errors; 855 unresolved names (1.5%)
