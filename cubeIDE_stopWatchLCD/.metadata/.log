@@ -50,3 +50,18 @@ Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid projec
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-01-13 10:41:12.927
 !MESSAGE Indexed 'oled_432' (23 sources, 139 headers) in 2.69 sec: 11,821 declarations; 43,901 references; 3 unresolved inclusions; 48 syntax errors; 855 unresolved names (1.5%)
+!SESSION 2024-01-15 19:39:52.102 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-01-15 19:39:59.338
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-01-15 19:39:59.345
+!MESSAGE Log4j2 initialized with config file /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-01-15 19:40:13.627
+!MESSAGE Started RMI Server, listening on port 41337
