@@ -124,7 +124,6 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -411,6 +410,8 @@ void StartTaskReadUART(void *argument)
 void StartTaskWriteUART(void *argument)
 {
   /* USER CODE BEGIN StartTaskWriteUART */
+	uint32_t UART1_timeout = 10;
+
 	int A = 65;  // A in ASCII code
 
 	for (int i = 0; i < UART1_BufferSize; i++)
@@ -421,7 +422,7 @@ void StartTaskWriteUART(void *argument)
   /* Infinite loop */
   for(;;)
   {
-	  HAL_UART_Transmit_DMA(&huart1, UART1_txBuffer, UART1_BufferSize);
+	  HAL_UART_Transmit(&huart1, UART1_txBuffer, UART1_BufferSize, UART1_timeout);
 	  osDelay(1000);
   }
   /* USER CODE END StartTaskWriteUART */

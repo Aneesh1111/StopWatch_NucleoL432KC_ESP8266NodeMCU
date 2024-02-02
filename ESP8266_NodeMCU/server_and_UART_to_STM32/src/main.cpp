@@ -1,147 +1,16 @@
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
+#include <SoftwareSerial.h>
 
 /* global variables for server connection */
-const char *ssid = "TP-Link_5C54_asd";     // Enter SSID
-const char *password = "$$$ 6#@ h4d [\\]"; // Enter Password
+// const char *ssid = "TP-Link_5C54_asd";     // Enter SSID
+// const char *password = "$$$ 6#@ h4d [\\]"; // Enter Password
+const char *ssid = "ROSBOT_network";     // Enter SSID
+const char *password = "ItWorksinSimulation"; // Enter Password
 
 /* *********************************************************************************
   - To see what IP address the ESP has, run the command: nmap -sn 192.168.0.168/24
 ************************************************************************************ */
-
-// int gpio4Value; 
-// int gpio5Value;
-
-// WiFiServer espServer(80); /* Instance of WiFiServer with port number 80 */
-// /* 80 is the Port Number for HTTP Web Server */
-
-// void setup() {
-
-//   Serial.begin(115200); /* Begin Serial Communication with 115200 Baud Rate */
-//   Serial.print("\n");
-//   Serial.print("Connecting to: ");
-//   Serial.println(ssid);
-
-//   WiFi.mode(WIFI_STA); /* Configure ESP8266 in STA Mode */
-//   WiFi.begin(ssid, password); /* Connect to Wi-Fi based on above SSID and Password */
-
-//   while(WiFi.status() != WL_CONNECTED)
-//   {
-//     Serial.print("*");
-//     delay(500);
-//   }
-
-//   Serial.print("\n");
-//   Serial.print("Connected to Wi-Fi: ");
-//   Serial.println(WiFi.SSID());
-//   delay(100);
-
-//   Serial.print("\n");
-//   Serial.println("Starting ESP8266 Web Server...");
-
-//   espServer.begin(); /* Start the HTTP web Server */
-
-//   Serial.println("ESP8266 Web Server Started");
-//   Serial.print("\n");
-//   Serial.print("The URL of ESP8266 Web Server is: ");
-//   Serial.print("http://");
-//   Serial.println(WiFi.localIP());
-//   Serial.print("\n");
-//   Serial.println("Use the above URL in your Browser to access ESP8266 Web Server\n");
-// }
-
-// void loop() {
-  
-//   WiFiClient client = espServer.available(); /* Check if a client is available */
-//   if(!client)
-//   {
-//     return;
-//   }
-
-//   Serial.println("New Client!!!");
-
-//   String request = client.readStringUntil('\r'); /* Read the first line of the request from client */
-//   Serial.println(request); /* Print the request on the Serial monitor */
-//   /* The request is in the form of HTTP GET Method */ 
-//   client.flush();
-
-//   /* Based on the URL from the request, "turn the LEDs ON or OFF" */
-//   if (request.indexOf("/GPIO4ON") != -1) 
-//   {
-//     Serial.println("GPIO4 LED is ON");
-//     gpio4Value = HIGH;
-//   } 
-//   if (request.indexOf("/GPIO4OFF") != -1)
-//   {
-//     Serial.println("GPIO4 LED is OFF");
-//     gpio4Value = LOW;
-//   }
-//   if (request.indexOf("/GPIO5ON") != -1) 
-//   {
-//     Serial.println("GPIO5 LED is ON");
-//     gpio5Value = HIGH;
-//   } 
-//   if (request.indexOf("/GPIO5OFF") != -1)
-//   {
-//     Serial.println("GPIO5 LED is OFF");
-//     gpio5Value = LOW;
-//   }
-
-//   /* HTTP Response in the form of HTML Web Page */
-//   client.println("HTTP/1.1 200 OK");
-//   client.println("Content-Type: text/html");
-//   client.println(); //  IMPORTANT
-//   client.println("<!DOCTYPE HTML>");
-//   client.println("<html>");
-//   client.println("<head>");
-//   client.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
-//   client.println("<link rel=\"icon\" href=\"data:,\">");
-//   /* CSS Styling for Buttons and Web Page */
-//   client.println("<style>");
-//   client.println("html { font-family: Courier New; display: inline-block; margin: 0px auto; text-align: center;}");
-//   client.println(".button {border: none; color: white; padding: 10px 20px; text-align: center;");
-//   client.println("text-decoration: none; font-size: 25px; margin: 2px; cursor: pointer;}");
-//   client.println(".button1 {background-color: #13B3F0;}");
-//   client.println(".button2 {background-color: #3342FF;}");
-//   client.println("</style>");
-//   client.println("</head>");
-  
-//   /* The main body of the Web Page */
-//   client.println("<body>");
-//   client.println("<h2>ESP8266 Web Server</h2>");
-  
-//   if(gpio4Value == LOW) 
-//   {
-//     client.println("<p>GPIO4 LED Status: OFF</p>");
-//     client.print("<p><a href=\"/GPIO4ON\"><button class=\"button button1\">Click to turn ON</button></a></p>");  
-//   } 
-//   else 
-//   {
-//     client.println("<p>GPIO4 LED Status: ON</p>");
-//     client.print("<p><a href=\"/GPIO4OFF\"><button class=\"button button2\">Click to turn OFF</button></a></p>"); 
-//   }
-  
-//   if(gpio5Value == LOW) 
-//   {
-//     client.println("<p>GPIO5 LED Status: OFF</p>");
-//     client.print("<p><a href=\"/GPIO5ON\"><button class=\"button button1\">Click to turn ON</button></a></p>");  
-//   } 
-//   else 
-//   {
-//     client.println("<p>GPIO5 LED Status: ON</p>");
-//     client.print("<p><a href=\"/GPIO5OFF\"><button class=\"button button2\">Click to turn OFF</button></a></p>");  
-//   }
-  
-//   client.println("</body>");
-//   client.println("</html>");
-//   client.print("\n");
-  
-//   delay(1);
-//   /* Close the connection */
-//   client.stop();
-//   Serial.println("Client disconnected");
-//   Serial.print("\n");
-// }
 
 // Set web server port number to 80
 WiFiServer server(80);
@@ -160,8 +29,16 @@ unsigned long previousTime = 0;
 // Define timeout time in milliseconds (example: 2000ms = 2s)
 const long timeoutTime = 2000;
 
+// UART Pins
+#define RX0 3
+#define TX0 1
+SoftwareSerial espSerial;
+
 void setup() {
   Serial.begin(115200);
+  espSerial.begin(9600, SWSERIAL_8N1, 3);
+
+  Serial.println("ESP8266 Initialized");
 
   // Connect to Wi-Fi network with SSID and password
   Serial.print("Connecting to ");
@@ -270,5 +147,17 @@ void loop(){
     client.stop();
     Serial.println("Client disconnected.");
     Serial.println("");
+  }
+
+
+  /* UART section */
+  // Send data to the STM32
+  espSerial.print("Hello from ESP8266!");
+
+  // Check for incoming data from the STM32
+  if (espSerial.available()) {
+      String receivedData = espSerial.readString();
+      Serial.print("Received from STM32: ");
+      Serial.println(receivedData);
   }
 }
