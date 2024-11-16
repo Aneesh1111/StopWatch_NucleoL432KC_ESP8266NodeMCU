@@ -1,10 +1,10 @@
-11:45:35 **** Incremental Build of configuration Debug for project stop_watch_project ****
+03:01:02 **** Incremental Build of configuration Debug for project stop_watch_project ****
 make -j12 all 
 arm-none-eabi-size  stop_watch_project.elf 
    text	   data	    bss	    dec	    hex	filename
-  25564	     28	   8356	  33948	   849c	stop_watch_project.elf
+  30280	    104	   8848	  39232	   9940	stop_watch_project.elf
 Finished building: default.size.stdout
  
 
-11:45:35 Build Finished. 0 errors, 0 warnings. (took 438ms)
+03:01:02 Build Finished. 0 errors, 0 warnings. (took 349ms)
 

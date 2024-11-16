@@ -1,0 +1,3 @@
+../Core/Inc/LCD_flash.hpp:23:2:LED_flash::LED_flash(uint32_t, uint32_t)	1
+../Core/Inc/LCD_flash.hpp:26:7:void LED_flash::loop()	2
+../Core/Src/tasks.cpp:11:6:void start_task(void*)	1

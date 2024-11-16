@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
-#include <SoftwareSerial.h>
+#include <HardwareSerial.h>
 
 /* global variables for server connection */
 // const char *ssid = "TP-Link_5C54_asd";     // Enter SSID
@@ -9,8 +9,7 @@ const char *ssid = "ROSBOT_network";     // Enter SSID
 const char *password = "ItWorksinSimulation"; // Enter Password
 
 /* *********************************************************************************
-  - To see what IP address the ESP has, run the command: nmap -sn 192.168.0.168/24
-************************************************************************************ */
+  - To see what IP address the ESP has, run the command: nmap -sn 192.168.0.168/24*** */
 
 // Set web server port number to 80
 WiFiServer server(80);
@@ -32,11 +31,13 @@ const long timeoutTime = 2000;
 // UART Pins
 #define RX0 3
 #define TX0 1
-SoftwareSerial espSerial;
+#define BUFFERSIZE 12
 
 void setup() {
-  Serial.begin(115200);
-  espSerial.begin(9600, SWSERIAL_8N1, 3);
+  Serial.begin(9600);
+  // Set GPIO 1 and GPIO 3 as UART pins
+  // pinMode(TX0, FUNCTION_1); // GPIO 1 as TX
+  // pinMode(RX0, FUNCTION_1); // GPIO 3 as RX
 
   Serial.println("ESP8266 Initialized");
 
@@ -83,16 +84,20 @@ void loop(){
             
             // turns the GPIOs on and off
             if (header.indexOf("GET /5/on") >= 0) {
-              Serial.println("GPIO 5 on");
+              // Serial.println("GPIO 5 on");
+              Serial.println("1");
               output5State = "on";
             } else if (header.indexOf("GET /5/off") >= 0) {
-              Serial.println("GPIO 5 off");
+              // Serial.println("GPIO 5 off");
+              Serial.println("2");
               output5State = "off";
             } else if (header.indexOf("GET /4/on") >= 0) {
-              Serial.println("GPIO 4 on");
+              // Serial.println("GPIO 4 on");
+              Serial.println("3");
               output4State = "on";
             } else if (header.indexOf("GET /4/off") >= 0) {
-              Serial.println("GPIO 4 off");
+              // Serial.println("GPIO 4 off");
+              Serial.println("4");
               output4State = "off";
             }
             
@@ -149,15 +154,45 @@ void loop(){
     Serial.println("");
   }
 
+  /* UART Receive section */
+  // char receivedChars[BUFFERSIZE]; // Declare an array to store the received characters
+  // int index = 0; // Initialize index to 0
 
-  /* UART section */
-  // Send data to the STM32
-  espSerial.print("Hello from ESP8266!");
 
-  // Check for incoming data from the STM32
-  if (espSerial.available()) {
-      String receivedData = espSerial.readString();
-      Serial.print("Received from STM32: ");
-      Serial.println(receivedData);
-  }
+  // Serial.println(Serial.available());
+  // // Wait until data is available to read
+  // while (Serial.available() > 0) {
+  //   char incomingChar = Serial.read(); // Read the incoming character
+
+  //   // Store the character in the array
+  //   receivedChars[index] = incomingChar;
+
+  //   // Increment the index
+  //   index++;
+
+  //   Serial.println(index);
+
+  //   // Check if the end of the array is reached or a termination condition is met
+  //   if (index >= BUFFERSIZE-1 )//|| incomingChar == '\n')
+  //   {
+  //     // Terminate the string with a null character
+  //     receivedChars[index] = '\0';
+
+  //     // Print the received array
+  //     Serial.print("Received array: ");
+  //     Serial.println(receivedChars);
+
+  //     // Reset the index for the next array
+  //     index = 0;
+  //   }
+  // }  
+  // // Print the received array
+  // // Serial.print("Received array: ");
+  // // Serial.println(receivedChars);
+
+  // delay(2000);
+
+  // /* UART Transmit section */
+  // Serial.println("abcdefjhijkl");
+
 }

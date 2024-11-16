@@ -1,0 +1,24 @@
+23/10/2024:
+- simplified project by only making a stopwatch with wires as buttons and console as display.
+
+problem - initial way didn't work, was too slow (seconds were much slower than they should be)
+
+solution for next time - implement timers such that they trigger an update of the numbers (ms for example) when they reach a certain number?
+
+-----------------------------------------------------------------------------------
+24/10/2024:
+- made the counting work using the trigger timer solution
+
+next step - implement triggers for three pins: start/stop and reset
+
+-----------------------------------------------------------------------------------
+30/10/2024:
+- added stopwatch functionality (start/stop/reset):
+	- PA3 = reset (EXTI - pull-down resistor 10k)
+	- PA4 = start/stop (EXTI - pull-down resistor 30k)
+
+next step - implement functional saftey (then you can work on LCD)
+
+-----------------------------------------------------------------------------------
+31/10/2024:
+

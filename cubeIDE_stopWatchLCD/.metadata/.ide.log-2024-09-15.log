@@ -1,0 +1,111 @@
+2024-09-15 15:28:44,993 [INFO] Activator:176 - 
+
+
+2024-09-15 15:28:45,010 [INFO] Activator:177 - !SESSION log4j initialized
+2024-09-15 15:28:58,922 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2024-09-15 15:29:01,959 [INFO] ApplicationProperties:184 - Using Application install path: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037
+2024-09-15 15:29:02,016 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db//mcu/
+2024-09-15 15:29:02,017 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db//plugins/boardmanager/
+2024-09-15 15:29:02,018 [WARN] ApiDb:259 - Overriding images path with different value:  => /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db//plugins/mcufinder/images/
+2024-09-15 15:29:02,038 [INFO] ApiDb:250 - Set database path to: /home/aneesh/.stmcufinder/plugins/mcufinder//mcu/
+2024-09-15 15:29:02,041 [INFO] DbMcusAds:125 - Set database path to: /home/aneesh/.stmcufinder/plugins/mcufinder//mcu/
+2024-09-15 15:29:02,047 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/aneesh/.stmcufinder/plugins/mcufinder//mcu/cs/
+2024-09-15 15:29:02,440 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-09-15 15:29:02,660 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db//mcu/
+2024-09-15 15:29:02,660 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db//plugins/boardmanager/
+2024-09-15 15:29:02,660 [INFO] ApiDb:261 - Set plugin images path to: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db//plugins/mcufinder/images/
+2024-09-15 15:29:02,661 [WARN] DbFile:41 - Overriding database path with different value: /home/aneesh/.stmcufinder/plugins/mcufinder/ => /home/aneesh/.stmcufinder/plugins/mcufinder
+2024-09-15 15:29:02,661 [INFO] ApiDb:250 - Set database path to: /home/aneesh/.stmcufinder/plugins/mcufinder//mcu/
+2024-09-15 15:29:02,661 [WARN] DbFile:41 - Overriding database path with different value: /home/aneesh/.stmcufinder/plugins/mcufinder/ => /home/aneesh/.stmcufinder/plugins/mcufinder
+2024-09-15 15:29:02,661 [INFO] DbMcusAds:125 - Set database path to: /home/aneesh/.stmcufinder/plugins/mcufinder//mcu/
+2024-09-15 15:29:02,661 [WARN] DbFile:41 - Overriding database path with different value: /home/aneesh/.stmcufinder/plugins/mcufinder/ => /home/aneesh/.stmcufinder/plugins/mcufinder
+2024-09-15 15:29:02,662 [WARN] DbFile:41 - Overriding database path with different value: /home/aneesh/.stmcufinder/plugins/mcufinder/ => /home/aneesh/.stmcufinder/plugins/mcufinder
+2024-09-15 15:29:02,662 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/aneesh/.stmcufinder/plugins/mcufinder//mcu/cs/
+2024-09-15 15:29:02,930 [INFO] MainPanel:264 - HeapMemory: 268435456
+2024-09-15 15:29:03,271 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db//mcu/
+2024-09-15 15:29:03,271 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db//plugins/boardmanager/
+2024-09-15 15:29:03,272 [INFO] ApiDb:261 - Set plugin images path to: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db//plugins/mcufinder/images/
+2024-09-15 15:29:03,272 [WARN] DbFile:41 - Overriding database path with different value: /home/aneesh/.stmcufinder/plugins/mcufinder/ => /home/aneesh/.stmcufinder/plugins/mcufinder
+2024-09-15 15:29:03,272 [INFO] ApiDb:250 - Set database path to: /home/aneesh/.stmcufinder/plugins/mcufinder//mcu/
+2024-09-15 15:29:03,272 [WARN] DbFile:41 - Overriding database path with different value: /home/aneesh/.stmcufinder/plugins/mcufinder/ => /home/aneesh/.stmcufinder/plugins/mcufinder
+2024-09-15 15:29:03,273 [INFO] DbMcusAds:125 - Set database path to: /home/aneesh/.stmcufinder/plugins/mcufinder//mcu/
+2024-09-15 15:29:03,273 [WARN] DbFile:41 - Overriding database path with different value: /home/aneesh/.stmcufinder/plugins/mcufinder/ => /home/aneesh/.stmcufinder/plugins/mcufinder
+2024-09-15 15:29:03,273 [WARN] DbFile:41 - Overriding database path with different value: /home/aneesh/.stmcufinder/plugins/mcufinder/ => /home/aneesh/.stmcufinder/plugins/mcufinder
+2024-09-15 15:29:03,273 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/aneesh/.stmcufinder/plugins/mcufinder//mcu/cs/
+2024-09-15 15:29:03,324 [INFO] ApplicationProperties:184 - Using Application install path: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037
+2024-09-15 15:29:03,328 [INFO] PluginManage:196 - Search for loadable plugins [exclusion list=, ]
+2024-09-15 15:29:03,331 [INFO] PluginManage:310 - Check plugin analytics
+2024-09-15 15:29:03,833 [INFO] AnalyticsPlugin:253 - Accepted Software Licenses: 
+2024-09-15 15:29:03,833 [INFO] AnalyticsPlugin:255 - Accepted CMSIS Pack Licenses: 
+2024-09-15 15:29:03,833 [INFO] AnalyticsPlugin:257 - Accepted Firmware Licenses: FW.L4.1.18.0
+2024-09-15 15:29:03,839 [INFO] PluginManage:359 - Loaded plugin analytics (category:tool,tabindex:-1)
+2024-09-15 15:29:03,840 [INFO] PluginManage:310 - Check plugin cadmodel
+2024-09-15 15:29:04,053 [INFO] CADModel:105 - Init CAD model plugin
+2024-09-15 15:29:04,055 [INFO] PluginManage:359 - Loaded plugin cadmodel (category:power,tabindex:5)
+2024-09-15 15:29:04,056 [INFO] PluginManage:310 - Check plugin clock
+2024-09-15 15:29:04,091 [INFO] PluginManage:359 - Loaded plugin clock (category:base,tabindex:2)
+2024-09-15 15:29:04,091 [INFO] PluginManage:310 - Check plugin ddr
+2024-09-15 15:29:04,100 [INFO] PluginManage:359 - Loaded plugin ddr (category:tool,tabindex:6)
+2024-09-15 15:29:04,100 [INFO] PluginManage:310 - Check plugin filemanager
+2024-09-15 15:29:04,522 [INFO] PluginManage:359 - Loaded plugin filemanager (category:base,tabindex:10)
+2024-09-15 15:29:04,522 [INFO] PluginManage:310 - Check plugin ipmanager
+2024-09-15 15:29:04,546 [INFO] PluginManage:359 - Loaded plugin ipmanager (category:base,tabindex:5)
+2024-09-15 15:29:04,546 [INFO] PluginManage:310 - Check plugin lpbam
+2024-09-15 15:29:04,644 [INFO] PluginManage:359 - Loaded plugin lpbam (category:base,tabindex:0)
+2024-09-15 15:29:04,645 [INFO] PluginManage:310 - Check plugin memorymap
+2024-09-15 15:29:04,729 [INFO] PluginManage:359 - Loaded plugin memorymap (category:base,tabindex:4)
+2024-09-15 15:29:04,733 [INFO] PluginManage:310 - Check plugin pinoutandconfiguration
+2024-09-15 15:29:04,780 [INFO] PluginManage:359 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2024-09-15 15:29:04,781 [INFO] PluginManage:310 - Check plugin pinoutconfig
+2024-09-15 15:29:05,131 [WARN] SupportedApi:132 - Cannot load RTOS API schema: s4s-elt-must-match.1: The content of 'definitions' must match (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)). A problem was found starting at: attribute.
+2024-09-15 15:29:05,762 [INFO] PluginManage:359 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2024-09-15 15:29:05,764 [INFO] PluginManage:310 - Check plugin power
+2024-09-15 15:29:05,825 [INFO] PluginManage:359 - Loaded plugin power (category:power,tabindex:4)
+2024-09-15 15:29:05,826 [INFO] PluginManage:310 - Check plugin projectmanager
+2024-09-15 15:29:05,904 [INFO] PluginManage:359 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2024-09-15 15:29:05,904 [INFO] PluginManage:310 - Check plugin thirdparty
+2024-09-15 15:29:06,485 [INFO] PluginManage:359 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2024-09-15 15:29:06,484 [WARN] IntegrityCheckThread:84 - waiting for thirdparty lock release [integrity check]
+2024-09-15 15:29:06,486 [INFO] PluginManage:310 - Check plugin tools
+2024-09-15 15:29:06,486 [INFO] IntegrityCheckThread:86 - entering critical section [integrity check]
+2024-09-15 15:29:06,489 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2024-09-15 15:29:06,498 [INFO] PluginManage:359 - Loaded plugin tools (category:base,tabindex:7)
+2024-09-15 15:29:06,500 [INFO] PluginManage:310 - Check plugin tutovideos
+2024-09-15 15:29:06,621 [FATAL] PluginManage:371 - Exception caught
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at com.st.microxplorer.plugin.PluginManage.loadPluginJar(PluginManage.java:352) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugin.PluginManage.PluginSearch(PluginManage.java:224) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugin.PluginManage.PluginDiscovery(PluginManage.java:67) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.MainPanel.initialization(MainPanel.java:316) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.AppletMainFrameCubeIde.init(AppletMainFrameCubeIde.java:242) ~[STM32CubeMX.jar:?]
+	at com.st.stm32cube.common.mx.core.CubeMxInstance.<init>(CubeMxInstance.java:117) ~[com.st.stm32cube.common.mx_6.10.0.202311202037/:?]
+	at com.st.stm32cube.common.mx.core.CubeMxInstance.getInstance(CubeMxInstance.java:91) ~[com.st.stm32cube.common.mx_6.10.0.202311202037/:?]
+	at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:25) ~[com.st.stm32cube.common.mx_6.10.0.202311202037/:?]
+	at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16) ~[com.st.stm32cube.common.mx_6.10.0.202311202037/:?]
+	at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100) ~[?:?]
+	at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:41) ~[?:?]
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79) ~[?:?]
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55) ~[?:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.18.100.v20230730-1117.jar:?]
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2737) ~[?:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[?:?]
+Caused by: java.lang.IllegalStateException: Module has been uninstalled. osgi.identity; type="osgi.bundle"; version:Version="6.10.0.202311202037"; osgi.identity="com.st.stm32cube.common.mx"; singleton:="true" [id=13]
+	at org.eclipse.osgi.container.Module.checkValid(Module.java:560) ~[?:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:421) ~[?:?]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513) ~[?:?]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[?:?]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570) ~[?:?]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335) ~[?:?]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397) ~[?:?]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:500) ~[?:?]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416) ~[?:?]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at com.st.microxplorer.plugins.tutovideos.TutoVideosMain.loadTutoVideoDB(TutoVideosMain.java:157) ~[?:?]
+	at com.st.microxplorer.plugins.tutovideos.TutoVideosPlugin.<init>(TutoVideosPlugin.java:76) ~[?:?]
+	... 21 more

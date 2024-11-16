@@ -1,0 +1,546 @@
+2024-10-24 00:01:02,485 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-24 00:01:06,326 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 516849280 Bytes (909115392)
+2024-10-24 00:01:07,686 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 551832048 Bytes (909115392)
+2024-10-24 00:01:10,978 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 617330152 Bytes (909115392)
+2024-10-24 00:01:14,319 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-24 00:01:14,319 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2024-10-24 00:01:14,319 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-24 00:01:14,319 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-24 00:01:14,319 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-10-24 00:01:14,319 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L4
+2024-10-24 00:01:14,319 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-24 00:01:14,320 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-24 00:01:14,320 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-24 00:01:14,320 [INFO] CodeGenerator:807 - code generatio: config db path: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db/
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : Initvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : Statevalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : Statevalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : ChannelIndexvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:335 - Argument : ChannelIndexvalue: null
+2024-10-24 00:01:14,339 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : Initvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : Statevalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : Statevalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : ChannelIndexvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : ChannelIndexvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : pSyncConfigvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : SyncSignalIDvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:335 - Argument : SyncSignalIDvalue: null
+2024-10-24 00:01:14,340 [INFO] Argument:325 - Argument : SyncPolarityvalue: null
+2024-10-24 00:01:14,341 [INFO] Argument:335 - Argument : SyncPolarityvalue: null
+2024-10-24 00:01:14,341 [INFO] Argument:325 - Argument : SyncEnablevalue: null
+2024-10-24 00:01:14,341 [INFO] Argument:335 - Argument : SyncEnablevalue: null
+2024-10-24 00:01:14,341 [INFO] Argument:325 - Argument : EventEnablevalue: null
+2024-10-24 00:01:14,341 [INFO] Argument:335 - Argument : EventEnablevalue: null
+2024-10-24 00:01:14,341 [INFO] Argument:325 - Argument : RequestNumbervalue: null
+2024-10-24 00:01:14,341 [INFO] Argument:335 - Argument : RequestNumbervalue: null
+2024-10-24 00:01:14,572 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/license.tmp_save
+2024-10-24 00:01:14,667 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/license.tmp
+2024-10-24 00:01:14,691 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/gpio.tmp_save
+2024-10-24 00:01:14,762 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/gpio.tmp
+2024-10-24 00:01:14,965 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-10-24 00:01:14,967 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp_save
+2024-10-24 00:01:15,026 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp
+2024-10-24 00:01:15,027 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp_save
+2024-10-24 00:01:15,089 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp
+2024-10-24 00:01:15,090 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp_save
+2024-10-24 00:01:15,156 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp
+2024-10-24 00:01:15,157 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp_save
+2024-10-24 00:01:15,227 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp
+2024-10-24 00:01:15,228 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp_save
+2024-10-24 00:01:15,296 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp
+2024-10-24 00:01:15,297 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp_save
+2024-10-24 00:01:15,355 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp
+2024-10-24 00:01:15,356 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp_save
+2024-10-24 00:01:15,417 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp
+2024-10-24 00:01:15,418 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp_save
+2024-10-24 00:01:15,475 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp
+2024-10-24 00:01:15,476 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp_save
+2024-10-24 00:01:15,533 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp
+2024-10-24 00:01:15,538 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-10-24 00:01:15,540 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp_save
+2024-10-24 00:01:15,597 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp
+2024-10-24 00:01:15,598 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp_save
+2024-10-24 00:01:15,655 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp
+2024-10-24 00:01:15,655 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp_save
+2024-10-24 00:01:15,711 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp
+2024-10-24 00:01:15,712 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp_save
+2024-10-24 00:01:15,770 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp
+2024-10-24 00:01:15,771 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp_save
+2024-10-24 00:01:15,831 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp
+2024-10-24 00:01:15,832 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp_save
+2024-10-24 00:01:15,888 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp
+2024-10-24 00:01:15,889 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp_save
+2024-10-24 00:01:15,948 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp
+2024-10-24 00:01:15,949 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp_save
+2024-10-24 00:01:16,007 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp
+2024-10-24 00:01:16,008 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp_save
+2024-10-24 00:01:16,066 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp
+2024-10-24 00:01:16,067 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/FreeRTOSConfig.h_save
+2024-10-24 00:01:16,235 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/FreeRTOSConfig.h
+2024-10-24 00:01:16,236 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/freertos.c_save
+2024-10-24 00:01:16,297 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/freertos.c
+2024-10-24 00:01:16,310 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma.tmp_save
+2024-10-24 00:01:16,370 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma.tmp
+2024-10-24 00:01:16,371 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma_GV.tmp_save
+2024-10-24 00:01:16,425 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma_GV.tmp
+2024-10-24 00:01:16,431 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_it.c_save
+2024-10-24 00:01:16,732 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_it.c
+2024-10-24 00:01:16,733 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_it.h_save
+2024-10-24 00:01:16,891 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_it.h
+2024-10-24 00:01:16,902 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_hal_msp.c_save
+2024-10-24 00:01:17,178 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_hal_msp.c
+2024-10-24 00:01:17,179 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/system.tmp_save
+2024-10-24 00:01:17,223 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/system.tmp
+2024-10-24 00:01:17,225 [INFO] CodeEngine:311 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_hal_conf.h_save
+2024-10-24 00:01:17,274 [INFO] CodeEngine:335 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_hal_conf.h
+2024-10-24 00:01:17,287 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-10-24 00:01:17,287 [WARN] CodeGenerator:3939 - IP not found : null
+2024-10-24 00:01:17,289 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/main.h_save
+2024-10-24 00:01:17,349 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/main.h
+2024-10-24 00:01:17,350 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/main.c_save
+2024-10-24 00:01:17,439 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/main.c
+2024-10-24 00:01:17,875 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 42mS.
+2024-10-24 00:01:17,877 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-10-24 00:01:18,051 [INFO] ConfigFileManager:1495 - The Die is : DIE435
+2024-10-24 00:01:19,420 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1543mS.
+2024-10-24 00:01:19,420 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-10-24 00:01:19,422 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-10-24 00:06:30,996 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-24 00:06:32,577 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 696834600 Bytes (1034944512)
+2024-10-24 00:06:34,174 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 716757544 Bytes (1034944512)
+2024-10-24 00:06:35,531 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 778101288 Bytes (1034944512)
+2024-10-24 00:06:38,624 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-24 00:06:38,624 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2024-10-24 00:06:38,625 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-24 00:06:38,625 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-24 00:06:38,625 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-10-24 00:06:38,625 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L4
+2024-10-24 00:06:38,625 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-24 00:06:38,625 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-24 00:06:38,625 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-24 00:06:38,625 [INFO] CodeGenerator:807 - code generatio: config db path: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db/
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-10-24 00:06:38,650 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:06:38,650 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : Initvalue: null
+2024-10-24 00:06:38,650 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:06:38,650 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:06:38,650 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:06:38,650 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:06:38,650 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:06:38,650 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:06:38,650 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:06:38,650 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:06:38,650 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:06:38,650 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : Statevalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : Statevalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : ChannelIndexvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : ChannelIndexvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : Initvalue: null
+2024-10-24 00:06:38,651 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:06:38,651 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:06:38,651 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : Statevalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : Statevalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : ChannelIndexvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : ChannelIndexvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : pSyncConfigvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : SyncSignalIDvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : SyncSignalIDvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : SyncPolarityvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : SyncPolarityvalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : SyncEnablevalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : SyncEnablevalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : EventEnablevalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : EventEnablevalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:325 - Argument : RequestNumbervalue: null
+2024-10-24 00:06:38,652 [INFO] Argument:335 - Argument : RequestNumbervalue: null
+2024-10-24 00:06:38,835 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/license.tmp_save
+2024-10-24 00:06:38,890 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/license.tmp
+2024-10-24 00:06:38,911 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/gpio.tmp_save
+2024-10-24 00:06:38,967 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/gpio.tmp
+2024-10-24 00:06:39,142 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-10-24 00:06:39,144 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp_save
+2024-10-24 00:06:39,193 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp
+2024-10-24 00:06:39,193 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp_save
+2024-10-24 00:06:39,242 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp
+2024-10-24 00:06:39,243 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp_save
+2024-10-24 00:06:39,291 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp
+2024-10-24 00:06:39,292 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp_save
+2024-10-24 00:06:39,342 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp
+2024-10-24 00:06:39,342 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp_save
+2024-10-24 00:06:39,391 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp
+2024-10-24 00:06:39,392 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp_save
+2024-10-24 00:06:39,439 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp
+2024-10-24 00:06:39,439 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp_save
+2024-10-24 00:06:39,486 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp
+2024-10-24 00:06:39,487 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp_save
+2024-10-24 00:06:39,532 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp
+2024-10-24 00:06:39,533 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp_save
+2024-10-24 00:06:39,577 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp
+2024-10-24 00:06:39,581 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-10-24 00:06:39,582 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp_save
+2024-10-24 00:06:39,626 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp
+2024-10-24 00:06:39,627 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp_save
+2024-10-24 00:06:39,673 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp
+2024-10-24 00:06:39,674 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp_save
+2024-10-24 00:06:39,720 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp
+2024-10-24 00:06:39,721 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp_save
+2024-10-24 00:06:39,769 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp
+2024-10-24 00:06:39,770 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp_save
+2024-10-24 00:06:39,820 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp
+2024-10-24 00:06:39,822 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp_save
+2024-10-24 00:06:39,868 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp
+2024-10-24 00:06:39,869 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp_save
+2024-10-24 00:06:39,916 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp
+2024-10-24 00:06:39,917 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp_save
+2024-10-24 00:06:39,995 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp
+2024-10-24 00:06:39,997 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp_save
+2024-10-24 00:06:40,078 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp
+2024-10-24 00:06:40,079 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/FreeRTOSConfig.h_save
+2024-10-24 00:06:40,141 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/FreeRTOSConfig.h
+2024-10-24 00:06:40,142 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/freertos.c_save
+2024-10-24 00:06:40,189 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/freertos.c
+2024-10-24 00:06:40,199 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma.tmp_save
+2024-10-24 00:06:40,245 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma.tmp
+2024-10-24 00:06:40,245 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma_GV.tmp_save
+2024-10-24 00:06:40,288 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma_GV.tmp
+2024-10-24 00:06:40,292 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_it.c_save
+2024-10-24 00:06:40,341 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_it.c
+2024-10-24 00:06:40,342 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_it.h_save
+2024-10-24 00:06:40,386 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_it.h
+2024-10-24 00:06:40,388 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_hal_msp.c_save
+2024-10-24 00:06:40,460 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_hal_msp.c
+2024-10-24 00:06:40,461 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/system.tmp_save
+2024-10-24 00:06:40,506 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/system.tmp
+2024-10-24 00:06:40,508 [INFO] CodeEngine:311 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_hal_conf.h_save
+2024-10-24 00:06:40,557 [INFO] CodeEngine:335 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_hal_conf.h
+2024-10-24 00:06:40,575 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-10-24 00:06:40,576 [WARN] CodeGenerator:3939 - IP not found : null
+2024-10-24 00:06:40,578 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/main.h_save
+2024-10-24 00:06:40,639 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/main.h
+2024-10-24 00:06:40,640 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/main.c_save
+2024-10-24 00:06:40,726 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/main.c
+2024-10-24 00:06:41,135 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 24mS.
+2024-10-24 00:06:41,137 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-10-24 00:06:41,321 [INFO] ConfigFileManager:1495 - The Die is : DIE435
+2024-10-24 00:06:42,456 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1307mS.
+2024-10-24 00:06:42,457 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-10-24 00:06:42,458 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-10-24 00:12:03,789 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-24 00:12:19,249 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 822694480 Bytes (1055916032)
+2024-10-24 00:12:21,585 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 841568944 Bytes (1055916032)
+2024-10-24 00:12:22,919 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 295663584 Bytes (1055916032)
+2024-10-24 00:12:25,400 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-10-24 00:12:25,400 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2024-10-24 00:12:25,400 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-24 00:12:25,400 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-10-24 00:12:25,400 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2024-10-24 00:12:25,400 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L4
+2024-10-24 00:12:25,400 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-10-24 00:12:25,401 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-10-24 00:12:25,401 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-10-24 00:12:25,401 [INFO] CodeGenerator:807 - code generatio: config db path: /opt/st/stm32cubeide_1.14.0/plugins/com.st.stm32cube.common.mx_6.10.0.202311202037//db/
+2024-10-24 00:12:25,417 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Initvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Statevalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Statevalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : ChannelIndexvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : ChannelIndexvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : hdmavalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Instancevalue: DMA1_Channel5
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Initvalue: null
+2024-10-24 00:12:25,418 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Requestvalue: DMA_REQUEST_2
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2024-10-24 00:12:25,418 [INFO] Argument:325 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:12:25,418 [INFO] Argument:335 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : Modevalue: DMA_NORMAL
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : Lockvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : Lockvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : Statevalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : Statevalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : Parentvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : Parentvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : XferCpltCallbackvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : XferHalfCpltCallbackvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : XferErrorCallbackvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : XferAbortCallbackvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : ErrorCodevalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : ErrorCodevalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : DmaBaseAddressvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : ChannelIndexvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : ChannelIndexvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : pSyncConfigvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:327 - 	 sub Args: 
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : SyncSignalIDvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : SyncSignalIDvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : SyncPolarityvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : SyncPolarityvalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : SyncEnablevalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : SyncEnablevalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : EventEnablevalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : EventEnablevalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:325 - Argument : RequestNumbervalue: null
+2024-10-24 00:12:25,419 [INFO] Argument:335 - Argument : RequestNumbervalue: null
+2024-10-24 00:12:25,585 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/license.tmp_save
+2024-10-24 00:12:25,650 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/license.tmp
+2024-10-24 00:12:25,675 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/gpio.tmp_save
+2024-10-24 00:12:25,758 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/gpio.tmp
+2024-10-24 00:12:25,921 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-10-24 00:12:25,923 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp_save
+2024-10-24 00:12:25,971 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp
+2024-10-24 00:12:25,971 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp_save
+2024-10-24 00:12:26,016 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp
+2024-10-24 00:12:26,016 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp_save
+2024-10-24 00:12:26,060 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp
+2024-10-24 00:12:26,060 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp_save
+2024-10-24 00:12:26,105 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp
+2024-10-24 00:12:26,106 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp_save
+2024-10-24 00:12:26,152 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp
+2024-10-24 00:12:26,153 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp_save
+2024-10-24 00:12:26,199 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp
+2024-10-24 00:12:26,200 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp_save
+2024-10-24 00:12:26,248 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp
+2024-10-24 00:12:26,248 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp_save
+2024-10-24 00:12:26,292 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp
+2024-10-24 00:12:26,293 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp_save
+2024-10-24 00:12:26,339 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp
+2024-10-24 00:12:26,344 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-10-24 00:12:26,346 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp_save
+2024-10-24 00:12:26,392 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_inc.tmp
+2024-10-24 00:12:26,393 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp_save
+2024-10-24 00:12:26,458 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelInit.tmp
+2024-10-24 00:12:26,459 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp_save
+2024-10-24 00:12:26,503 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_kernelStart.tmp
+2024-10-24 00:12:26,504 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp_save
+2024-10-24 00:12:26,552 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_typedefs.tmp
+2024-10-24 00:12:26,553 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp_save
+2024-10-24 00:12:26,606 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_vars.tmp
+2024-10-24 00:12:26,607 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp_save
+2024-10-24 00:12:26,650 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_pfp.tmp
+2024-10-24 00:12:26,651 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp_save
+2024-10-24 00:12:26,697 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_obj_creat.tmp
+2024-10-24 00:12:26,698 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp_save
+2024-10-24 00:12:26,743 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_default_thread.tmp
+2024-10-24 00:12:26,743 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp_save
+2024-10-24 00:12:26,787 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/rtos_threads.tmp
+2024-10-24 00:12:26,788 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/FreeRTOSConfig.h_save
+2024-10-24 00:12:26,849 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/FreeRTOSConfig.h
+2024-10-24 00:12:26,850 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/freertos.c_save
+2024-10-24 00:12:26,898 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/freertos.c
+2024-10-24 00:12:26,907 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma.tmp_save
+2024-10-24 00:12:26,952 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma.tmp
+2024-10-24 00:12:26,952 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma_GV.tmp_save
+2024-10-24 00:12:26,995 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/dma_GV.tmp
+2024-10-24 00:12:26,999 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_it.c_save
+2024-10-24 00:12:27,048 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_it.c
+2024-10-24 00:12:27,049 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_it.h_save
+2024-10-24 00:12:27,093 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_it.h
+2024-10-24 00:12:27,096 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_hal_msp.c_save
+2024-10-24 00:12:27,163 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/stm32l4xx_hal_msp.c
+2024-10-24 00:12:27,164 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/system.tmp_save
+2024-10-24 00:12:27,212 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/MXTmpFiles/system.tmp
+2024-10-24 00:12:27,214 [INFO] CodeEngine:311 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_hal_conf.h_save
+2024-10-24 00:12:27,263 [INFO] CodeEngine:335 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/stm32l4xx_hal_conf.h
+2024-10-24 00:12:27,284 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-10-24 00:12:27,284 [WARN] CodeGenerator:3939 - IP not found : null
+2024-10-24 00:12:27,286 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/main.h_save
+2024-10-24 00:12:27,342 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Inc/main.h
+2024-10-24 00:12:27,343 [INFO] CodeEngine:255 - oldGeneratedFile, /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/main.c_save
+2024-10-24 00:12:27,520 [INFO] CodeEngine:279 - Generated code: /home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/Core/Src/main.c
+2024-10-24 00:12:27,936 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 23mS.
+2024-10-24 00:12:27,937 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-10-24 00:12:28,117 [INFO] ConfigFileManager:1495 - The Die is : DIE435
+2024-10-24 00:12:29,268 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1331mS.
+2024-10-24 00:12:29,269 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-10-24 00:12:29,270 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.

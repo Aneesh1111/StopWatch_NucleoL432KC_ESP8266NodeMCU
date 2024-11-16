@@ -1,0 +1,13 @@
+../Core/Src/tasks.c:34:6:LED_flash	2
+../Core/Src/tasks.c:59:6:data_bus_write	1
+../Core/Src/tasks.c:69:6:set_E	1
+../Core/Src/tasks.c:74:6:set_RS	1
+../Core/Src/tasks.c:80:6:LCD_send_now	1
+../Core/Src/tasks.c:93:6:LCD_send_bits	1
+../Core/Src/tasks.c:112:6:set_position	1
+../Core/Src/tasks.c:122:6:write_text	5
+../Core/Src/tasks.c:157:6:LCD_init	1
+../Core/Src/tasks.c:188:9:ascii_hex	2
+../Core/Src/tasks.c:203:6:LCD_clear	2
+../Core/Src/tasks.c:215:6:LCD_add	2
+../Core/Src/tasks.c:229:6:LCD_text	5
