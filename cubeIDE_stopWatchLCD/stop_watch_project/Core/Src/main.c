@@ -48,6 +48,8 @@ UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 DMA_HandleTypeDef hdma_usart1_rx;
 
+WWDG_HandleTypeDef hwwdg;
+
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
@@ -74,7 +76,14 @@ osThreadId_t count_stopwatchHandle;
 const osThreadAttr_t count_stopwatch_attributes = {
   .name = "count_stopwatch",
   .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityRealtime1,
+  .priority = (osPriority_t) osPriorityHigh,
+};
+/* Definitions for WatchDogChecks */
+osThreadId_t WatchDogChecksHandle;
+const osThreadAttr_t WatchDogChecks_attributes = {
+  .name = "WatchDogChecks",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityRealtime,
 };
 /* USER CODE BEGIN PV */
 
@@ -88,10 +97,12 @@ static void MX_USART2_UART_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_TIM16_Init(void);
 static void MX_TIM2_Init(void);
+static void MX_WWDG_Init(void);
 void StartDefaultTask(void *argument);
 void StartTaskReadUART(void *argument);
 void StartTaskWriteUART(void *argument);
 void StartTaskCountStopwatch(void *argument);
+void StartTaskStartTaskWatchDogChecks(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -108,8 +119,6 @@ uint8_t UART1_debugBuffer[BUFFER_SIZE] = {0};
 uint8_t rxData; // Variable to store received data
 uint8_t rxIndex = 0; // Index for buffer
 
-volatile uint8_t reset_flag = 0;  // 0 = not reset, 1 = reset
-volatile uint8_t start_stop_flag = 0;  // 0 = stop, 1 = start
 
 // Global time variables
 volatile int milliseconds = 0;
@@ -122,6 +131,10 @@ volatile int prev_milliseconds = 0;
 #define STOP 0
 #define RESET 1
 #define NOT_RESET 0
+
+volatile uint8_t reset_flag = NOT_RESET;  // 0 = not reset, 1 = reset
+volatile uint8_t start_stop_flag = STOP;  // 0 = stop, 1 = start
+
 /* USER CODE END 0 */
 
 /**
@@ -156,6 +169,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM16_Init();
   MX_TIM2_Init();
+  MX_WWDG_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim16);
   HAL_TIM_Base_Start_IT(&htim2);
@@ -182,16 +196,19 @@ int main(void)
 
   /* Create the thread(s) */
   /* creation of defaultTask */
-  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
-
-  /* creation of read_UART */
-  read_UARTHandle = osThreadNew(StartTaskReadUART, NULL, &read_UART_attributes);
-
-  /* creation of write_UART */
-  write_UARTHandle = osThreadNew(StartTaskWriteUART, NULL, &write_UART_attributes);
+//  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+//
+//  /* creation of read_UART */
+//  read_UARTHandle = osThreadNew(StartTaskReadUART, NULL, &read_UART_attributes);
+//
+//  /* creation of write_UART */
+//  write_UARTHandle = osThreadNew(StartTaskWriteUART, NULL, &write_UART_attributes);
 
   /* creation of count_stopwatch */
   count_stopwatchHandle = osThreadNew(StartTaskCountStopwatch, NULL, &count_stopwatch_attributes);
+
+  /* creation of WatchDogChecks */
+  WatchDogChecksHandle = osThreadNew(StartTaskStartTaskWatchDogChecks, NULL, &WatchDogChecks_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -264,7 +281,7 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV16;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
@@ -298,7 +315,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 0;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 31999;
+  htim2.Init.Period = 3999;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -425,6 +442,36 @@ static void MX_USART2_UART_Init(void)
 }
 
 /**
+  * @brief WWDG Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_WWDG_Init(void)
+{
+
+  /* USER CODE BEGIN WWDG_Init 0 */
+
+  /* USER CODE END WWDG_Init 0 */
+
+  /* USER CODE BEGIN WWDG_Init 1 */
+
+  /* USER CODE END WWDG_Init 1 */
+  hwwdg.Instance = WWDG;
+  hwwdg.Init.Prescaler = WWDG_PRESCALER_8;
+  hwwdg.Init.Window = 95;
+  hwwdg.Init.Counter = 127;
+  hwwdg.Init.EWIMode = WWDG_EWI_ENABLE;
+  if (HAL_WWDG_Init(&hwwdg) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN WWDG_Init 2 */
+
+  /* USER CODE END WWDG_Init 2 */
+
+}
+
+/**
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void)
@@ -507,7 +554,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	static uint32_t last_tick = 0;
 	uint32_t current_tick = HAL_GetTick();
-	uint32_t debouncing_delay = 50;  // in milliseconds
+	uint32_t debouncing_delay = 100;  // in milliseconds
 
 	if (GPIO_Pin == GPIO_PIN_3 && (current_tick - last_tick) > debouncing_delay)
 	{
@@ -529,10 +576,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
         }
 	}
 
-	if ((GPIO_Pin == GPIO_PIN_4 || GPIO_Pin == GPIO_PIN_3) && (current_tick - last_tick) > debouncing_delay)
-	{
-		HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-	}
+//	if ((GPIO_Pin == GPIO_PIN_4 || GPIO_Pin == GPIO_PIN_3) && (current_tick - last_tick) > debouncing_delay)
+//	{
+//		HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+//	}
 
 }
 
@@ -545,10 +592,10 @@ void SendTimeUART(int hours, int minutes, int seconds, int milliseconds) {
 
 // Helper function to increment time components
 void UpdateTime(void) {
-    if (milliseconds > 999) {
+    if (milliseconds >= 999) {
         seconds++;
         milliseconds = 0;
-        HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin); // Toggle LED every second
+//        HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin); // Toggle LED every second
     }
     if (seconds > 59) {
         minutes++;
@@ -575,7 +622,7 @@ void StartDefaultTask(void *argument)
   for(;;)
   {
 //	  HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-	  osDelay(500);
+//	  osDelay(500);
   }
   /* USER CODE END 5 */
 }
@@ -614,7 +661,7 @@ void StartTaskReadUART(void *argument)
 	for(;;)
 	{
 //	  HAL_UART_Receive(&huart1, UART1_rxBuffer, UART1_BufferSize, UART1_timeout);
-	  osDelay(1000);
+//	  osDelay(1000);
 //	  HAL_UART_Transmit(&huart1, UART1_rxBuffer, UART1_BufferSize, UART1_timeout);
 	}
   /* USER CODE END StartTaskReadUART */
@@ -630,7 +677,7 @@ void StartTaskReadUART(void *argument)
 void StartTaskWriteUART(void *argument)
 {
   /* USER CODE BEGIN StartTaskWriteUART */
-	uint32_t UART1_timeout = 100;
+//	uint32_t UART1_timeout = 100;
 
 //	int A = 65;  // A in ASCII code
 //
@@ -701,6 +748,29 @@ void StartTaskCountStopwatch(void *argument)
         }
     }
   /* USER CODE END StartTaskCountStopwatch */
+}
+
+/* USER CODE BEGIN Header_StartTaskStartTaskWatchDogChecks */
+/**
+* @brief Function implementing the WatchDogChecks thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTaskStartTaskWatchDogChecks */
+void StartTaskStartTaskWatchDogChecks(void *argument)
+{
+  /* USER CODE BEGIN StartTaskStartTaskWatchDogChecks */
+//    osDelay(900);
+  /* Infinite loop */
+  for(;;)
+  {
+	osDelay(900);
+	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+    HAL_WWDG_Refresh(&hwwdg);
+//	osDelay(900);
+
+  }
+  /* USER CODE END StartTaskStartTaskWatchDogChecks */
 }
 
 /**

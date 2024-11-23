@@ -16,9 +16,22 @@ next step - implement triggers for three pins: start/stop and reset
 - added stopwatch functionality (start/stop/reset):
 	- PA3 = reset (EXTI - pull-down resistor 10k)
 	- PA4 = start/stop (EXTI - pull-down resistor 30k)
-
+	- to trigger, apply 3V source to the input
+	
 next step - implement functional saftey (then you can work on LCD)
 
 -----------------------------------------------------------------------------------
-31/10/2024:
+16/11/2024:
+
+- tried to add watchdog timer - didn't work yet. Need to debug :(
+
+- used (https://controllerstech.com/wp-content/uploads/2020/07/iwdg_3.avif) to calculate the window time (min-max time in ms) (max=193.536ms, min=98.304ms)
+
+-----------------------------------------------------------------------------------
+18/11/2024:
+
+- original code worked - tried watchdog without pre-thing enabled (so only one number is checked, no window)
+
+-----------------------------------------------------------------------------------
+23/11/2024:
 
