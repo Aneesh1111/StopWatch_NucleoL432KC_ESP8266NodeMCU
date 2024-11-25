@@ -87,6 +87,8 @@ const osThreadAttr_t WatchDogChecks_attributes = {
 };
 /* USER CODE BEGIN PV */
 
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -121,20 +123,29 @@ uint8_t rxIndex = 0; // Index for buffer
 
 
 // Global time variables
-volatile int milliseconds = 0;
-volatile int seconds = 0;
-volatile int minutes = 0;
-volatile int hours = 0;
-volatile int prev_milliseconds = 0;
+volatile uint32_t milliseconds = 0;
+volatile uint32_t seconds = 0;
+volatile uint32_t minutes = 0;
+volatile uint32_t hours = 0;
+volatile uint32_t prev_milliseconds = 0;
 
 #define START 1
 #define STOP 0
 #define RESET 1
 #define NOT_RESET 0
 
-volatile uint8_t reset_flag = NOT_RESET;  // 0 = not reset, 1 = reset
-volatile uint8_t start_stop_flag = STOP;  // 0 = stop, 1 = start
+volatile uint32_t reset_flag = NOT_RESET;  // 0 = not reset, 1 = reset
+volatile uint32_t start_stop_flag = STOP;  // 0 = stop, 1 = start
 
+// Define task handles and watchdog status flags
+#define NUM_TASKS 1  // Number of tasks to monitor
+
+volatile uint32_t taskAliveFlags[NUM_TASKS] = {0};
+
+// Task IDs (to identify them in the watchdog)
+typedef enum {
+    TASK_count_stopwatch_ID = 0
+} TaskID_t;
 /* USER CODE END 0 */
 
 /**
@@ -205,7 +216,7 @@ int main(void)
 //  write_UARTHandle = osThreadNew(StartTaskWriteUART, NULL, &write_UART_attributes);
 
   /* creation of count_stopwatch */
-  count_stopwatchHandle = osThreadNew(StartTaskCountStopwatch, NULL, &count_stopwatch_attributes);
+  count_stopwatchHandle = osThreadNew(StartTaskCountStopwatch, (void*)TASK_count_stopwatch_ID, &count_stopwatch_attributes);
 
   /* creation of WatchDogChecks */
   WatchDogChecksHandle = osThreadNew(StartTaskStartTaskWatchDogChecks, NULL, &WatchDogChecks_attributes);
@@ -584,9 +595,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 }
 
 // Helper function to format and send time over UART
-void SendTimeUART(int hours, int minutes, int seconds, int milliseconds) {
+void SendTimeUART(uint32_t hours, uint32_t minutes, uint32_t seconds, uint32_t milliseconds) {
     char uart_buf[50];
-    int uart_buf_len = sprintf(uart_buf, "%02d:%02d:%02d:%03d h:m:s:ms\r\n", hours, minutes, seconds, milliseconds);
+    uint16_t uart_buf_len = sprintf(uart_buf, "%02d:%02d:%02d:%03d h:m:s:ms\r\n", hours, minutes, seconds, milliseconds);
     HAL_UART_Transmit(&huart2, (uint8_t *)uart_buf, uart_buf_len, 100);
 }
 
@@ -717,9 +728,11 @@ void StartTaskCountStopwatch(void *argument)
 {
   /* USER CODE BEGIN StartTaskCountStopwatch */
     /* Infinite loop */
-	int reset_flag_prev = reset_flag;
-	int start_stop_flag_prev = start_stop_flag;
+    TaskID_t taskId = (TaskID_t)argument;
+    uint32_t reset_flag_prev = reset_flag;
+    uint32_t start_stop_flag_prev = start_stop_flag;
     for (;;) {
+    	taskAliveFlags[taskId] = 1;  // Signal task is alive
         // If stopwatch is running and not reset
         if ((start_stop_flag == START) && (reset_flag == NOT_RESET)) {
             if (prev_milliseconds != milliseconds) {
@@ -760,14 +773,31 @@ void StartTaskCountStopwatch(void *argument)
 void StartTaskStartTaskWatchDogChecks(void *argument)
 {
   /* USER CODE BEGIN StartTaskStartTaskWatchDogChecks */
-//    osDelay(900);
   /* Infinite loop */
   for(;;)
   {
 	osDelay(900);
-	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
-    HAL_WWDG_Refresh(&hwwdg);
-//	osDelay(900);
+
+	uint32_t allTasksAlive = 1;
+    for (int i = 0; i < NUM_TASKS; i++) {
+        if (taskAliveFlags[i] == 0) {
+            allTasksAlive = 0;  // Task did not signal within time
+            break;
+        }
+    }
+
+    if (allTasksAlive) {
+    	HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+        HAL_WWDG_Refresh(&hwwdg);
+    } //else {
+        // Handle watchdog timeout: log error, reset system, etc.
+        // resetSystem(); or print error message
+    //}
+
+    // Clear task flags for next check
+    for (int i = 0; i < NUM_TASKS; i++) {
+        taskAliveFlags[i] = 0;
+    }
 
   }
   /* USER CODE END StartTaskStartTaskWatchDogChecks */

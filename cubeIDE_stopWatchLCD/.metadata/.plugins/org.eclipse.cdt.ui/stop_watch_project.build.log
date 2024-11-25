@@ -1,29 +1,10 @@
-17:06:42 **** Incremental Build of configuration Debug for project stop_watch_project ****
+22:11:29 **** Incremental Build of configuration Debug for project stop_watch_project ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'SendTimeUART':
-../Core/Src/main.c:589:24: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-  589 |     int uart_buf_len = sprintf(uart_buf, "%02d:%02d:%02d:%03d h:m:s:ms\r\n", hours, minutes, seconds, milliseconds);
-      |                        ^~~~~~~
-../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-   21 | #include "cmsis_os.h"
-  +++ |+#include <stdio.h>
-   22 | 
-../Core/Src/main.c:589:24: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
-  589 |     int uart_buf_len = sprintf(uart_buf, "%02d:%02d:%02d:%03d h:m:s:ms\r\n", hours, minutes, seconds, milliseconds);
-      |                        ^~~~~~~
-../Core/Src/main.c:589:24: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-arm-none-eabi-gcc -o "stop_watch_project.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/aneesh/Desktop/stop_watch_LCD/cubeIDE_stopWatchLCD/stop_watch_project/STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stop_watch_project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stop_watch_project.elf
- 
 arm-none-eabi-size  stop_watch_project.elf 
-arm-none-eabi-objdump -h -S stop_watch_project.elf  > "stop_watch_project.list"
    text	   data	    bss	    dec	    hex	filename
-  30464	    104	   8864	  39432	   9a08	stop_watch_project.elf
+  30576	    104	   8864	  39544	   9a78	stop_watch_project.elf
 Finished building: default.size.stdout
  
-Finished building: stop_watch_project.list
- 
 
-17:06:42 Build Finished. 0 errors, 2 warnings. (took 703ms)
+22:11:29 Build Finished. 0 errors, 0 warnings. (took 286ms)
 

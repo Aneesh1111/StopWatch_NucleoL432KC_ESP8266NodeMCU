@@ -1,3 +1,11 @@
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+IMPORTANT NOTES:
+
+- Follow firmware standard from "the art of designing embedded systems"
+- 
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 23/10/2024:
 - simplified project by only making a stopwatch with wires as buttons and console as display.
 
@@ -34,4 +42,18 @@ next step - implement functional saftey (then you can work on LCD)
 
 -----------------------------------------------------------------------------------
 23/11/2024:
+
+- WWDG  works *had to comment out the other tasks that wern't doing anything) and changed the osDelay for the watchdog feed from 1ms to 900 ms. (which falls in the window of the watchdog (~800ms - ~1040ms)
+
+- next todo: make a check that each tasks runs properly (should complete a task very so often for example: complete 1 task every 1 second) and if it doesn't the watchdog should not get fed.
+
+-----------------------------------------------------------------------------------
+25/11/2024:
+
+- cleaned up code (not using int but uint32_t for example - because STM32 is 32 bytes so compiler will probably optimize to uint32_t anyway - quicker to look up)
+
+- later on, add a IWDG as well as this uses an independent timer, first make WWDG give debug information about what went wrong
+- also clean up code so no more global variables :D
+
+-----------------------------------------------------------------------------------
 
